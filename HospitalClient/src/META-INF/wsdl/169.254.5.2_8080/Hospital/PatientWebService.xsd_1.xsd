@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://UserPackage/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://UserPackage/">
+
+<xs:element name="addPatient" type="tns:addPatient"/>
+
+<xs:element name="addPatientResponse" type="tns:addPatientResponse"/>
+
+<xs:element name="disablePatient" type="tns:disablePatient"/>
+
+<xs:element name="disablePatientResponse" type="tns:disablePatientResponse"/>
+
+<xs:element name="listAll" type="tns:listAll"/>
+
+<xs:element name="listAllResponse" type="tns:listAllResponse"/>
+
+<xs:element name="updatePatient" type="tns:updatePatient"/>
+
+<xs:element name="updatePatientResponse" type="tns:updatePatientResponse"/>
+
+<xs:element name="viewPatient" type="tns:viewPatient"/>
+
+<xs:element name="viewPatientResponse" type="tns:viewPatientResponse"/>
+
+<xs:complexType name="disablePatient">
+<xs:sequence>
+<xs:element name="disablePatient" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="disablePatientResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listAll">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="listAllResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addPatient">
+<xs:sequence>
+<xs:element name="patientID" type="xs:string" minOccurs="0"/>
+<xs:element name="FirstName" type="xs:string" minOccurs="0"/>
+<xs:element name="LastName" type="xs:string" minOccurs="0"/>
+<xs:element name="MiddleName" type="xs:string" minOccurs="0"/>
+<xs:element name="Gender" type="xs:string" minOccurs="0"/>
+<xs:element name="Age" type="xs:int"/>
+<xs:element name="RegisteredBy" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addPatientResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updatePatient">
+<xs:sequence>
+<xs:element name="patientID" type="xs:string" minOccurs="0"/>
+<xs:element name="FirstName" type="xs:string" minOccurs="0"/>
+<xs:element name="LastName" type="xs:string" minOccurs="0"/>
+<xs:element name="MiddleName" type="xs:string" minOccurs="0"/>
+<xs:element name="Gender" type="xs:string" minOccurs="0"/>
+<xs:element name="Age" type="xs:int"/>
+<xs:element name="RegisteredBy" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updatePatientResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="viewPatient">
+<xs:sequence>
+<xs:element name="viewPatient" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="viewPatientResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
